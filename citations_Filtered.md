@@ -1,13 +1,13 @@
 - - -
-Title: 
-Link: 
-Citation: 
+- Title: 
+- Link: 
+- Citation: 
 ## Notes
 
 - - -
-Title: 
-Link: 
-Citation: 
+- Title: 
+- Link: 
+- Citation: 
 ## Notes
 
 - - -
