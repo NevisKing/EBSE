@@ -13,14 +13,18 @@ MIN_STARS = 10
 MIN_FORKS = 10
 MIN_SIZE = 10000 # 10MB
 
+def log(message):
+    with open("output.txt", "a") as f:
+        f.write(message + "\n")
+
 def githubLimit(github_client):
     core_rate_limit = github_client.get_rate_limit().core
-    print("Remaining requests:", core_rate_limit.remaining)
+    log("Remaining requests: " + str(core_rate_limit.remaining))
     # If the rate limit is 0, time out until the rate limit is reset
     if core_rate_limit.remaining <= 250:
         reset_time = core_rate_limit.reset.timestamp() - datetime.datetime.now().timestamp()
         # Sleep until the rate limit is reset
-        print("Rate limit exceeded. Sleeping for ", int(reset_time), " seconds")
+        log("Rate limit exceeded. Sleeping for " + str(int(reset_time)) + " seconds")
         time.sleep(reset_time)
 
 def githubConnect():
@@ -28,25 +32,25 @@ def githubConnect():
         github_client = Github(login_or_token=GITHUB_ACCESS_TOKEN, per_page=100)
 
         user = github_client.get_user()
-        print("Connected to GitHub as:", user.login)
+        log("Connected to GitHub as: " + str(user.login))
         return github_client
     
     except Exception as e:
-        print("Error connecting to GitHub:", e)
-        print("Exiting...")
+        log("Error connecting to GitHub: " + str(e))
+        log("Exiting...")
         sys.exit(1)
 
 def preprocessRepos(unique_repos):
     discared_repos = []
     selected_repos = []
     for repo in unique_repos:
-        print("Preprocessing repo:", repo.full_name)
+        log("Preprocessing repo: " + str(repo.full_name))
 
         sub_count = repo.subscribers_count
 
         # Check the number of watchers the repo has
         if sub_count < 10:
-            print("\tRepo has less than 10 watchers")
+            log("\tRepo has less than 10 watchers")
             # Add the repo link and "watchers" argument to the checked_repos list
             discared_repos.append((repo, "watchers"))
 
@@ -54,16 +58,16 @@ def preprocessRepos(unique_repos):
         try:
             contributors = repo.get_contributors(anon="true").totalCount
             if contributors < 5:
-                print("\tRepo has less than 5 contributors")
+                log("\tRepo has less than 5 contributors")
                 # Add the repo link and "contributors" argument to the checked_repos list
                 discared_repos.append((repo, "contributors"))
                 continue
         except Exception as e:
             if "The history or contributor list is too large to list contributors" in str(e):
                 contributors = -1
-                print("\tRepo has too many contributors")
+                log("\tRepo has too many contributors")
             else:
-                print("\tError getting contributors:", e)
+                log("\tError getting contributors: " + str(e))
                 discared_repos.append(repo, "contributors")
                 continue
 
@@ -79,7 +83,7 @@ def preprocessRepos(unique_repos):
 def advancedRepos(github_client, selected_repos):
     for repo in selected_repos:
         githubLimit(github_client)
-        print("Getting advanced repo data for:", repo["repo_name"])
+        log("Getting advanced repo data for: " + str(repo["repo_name"]))
         try:
             commits = repo["repo"].get_commits()
             repo["pull_requests"] = repo["repo"].get_pulls().totalCount
@@ -90,14 +94,14 @@ def advancedRepos(github_client, selected_repos):
             time_zone = datetime.timezone(datetime.timedelta(hours=0))
             default_date = datetime.datetime(1970, 1, 2, 0, 0, 0, 0, time_zone)
             if (closed_pull_requests_first[0].created_at < default_date):
-                print("\tDiscarding repo:", repo["repo_name"], "Pull request date:", closed_pull_requests_first[0].created_at)
+                log("\tDiscarding repo: " + str(repo["repo_name"]) + " Pull request date: " + str(closed_pull_requests_first[0].created_at))
                 with open("repos/discarded_links.txt", "a") as f:
                     f.write(repo["repo_url"] + " " + "pull request date: " + str(closed_pull_requests_first[0].created_at) + "\n")
                 continue
 
             closed_issues_first = repo["repo"].get_issues(state="closed", sort="created", direction="asc")
             if (closed_issues_first[0].created_at < default_date):
-                print("\tDiscarding repo:", repo["repo_name"], "Issue date:", closed_issues_first[0].created_at)
+                log("\tDiscarding repo: " + str(repo["repo_name"]) + " Issue date: " + str(closed_issues_first[0].created_at))
                 with open("repos/discarded_links.txt", "a") as f:
                     f.write(repo["repo_url"] + " " + "issue date: " + str(closed_issues_first[0].created_at) + "\n")
                 continue
@@ -109,18 +113,18 @@ def advancedRepos(github_client, selected_repos):
             
             last_commit_date = commits_last_page[0].commit.author.date
             if (last_commit_date < default_date):
-                print("\tDiscarding repo:", repo["repo_name"], "Commit date:", last_commit_date)
+                log("\tDiscarding repo: " + str(repo["repo_name"]) + " Commit date: " + str(last_commit_date))
                 with open("repos/discarded_links.txt", "a") as f:
                     f.write(repo["repo_url"] + " " + "commit date: " + str(last_commit_date) + "\n")
                 continue
 
             date_2010 = datetime.datetime(2010, 1, 1, 0, 0, 0, 0, time_zone)
             if (closed_pull_requests_first[0].created_at < date_2010):
-                print("\tPull request before 2010:", repo["repo_name"], "Pull request date:", closed_pull_requests_first[0].created_at)
+                log("\tPull request before 2010: " + str(repo["repo_name"]) + " Pull request date: " + str(closed_pull_requests_first[0].created_at))
             if (closed_issues_first[0].created_at < date_2010):
-                print("\tIssue before 2010:", repo["repo_name"], "Issue date:", closed_issues_first[0].created_at)
+                log("\tIssue before 2010: " + str(repo["repo_name"]) + " Issue date: " + str(closed_issues_first[0].created_at))
             if (last_commit_date < date_2010):
-                print("\tCommit before 2010:", repo["repo_name"], "Commit date:", last_commit_date)
+                log("\tCommit before 2010: " + str(repo["repo_name"]) + " Commit date: " + str(last_commit_date))
 
             repo["closed_pull_requests"] = closed_pull_requests_first.totalCount
             if (repo["closed_pull_requests"] == 0):
@@ -217,14 +221,14 @@ def advancedRepos(github_client, selected_repos):
                 repo["events_frequency_last_100"] = (events[0].created_at - events[99].created_at).total_seconds() / 100
 
         except Exception as e:
-            print("Error getting advanced repo data:", e)
+            log("Error getting advanced repo data: " + str(e))
             continue
         with open("repos/chosen_links.txt", "a") as f:
             f.write(repo["repo_name"] + "," + str(repo["repo_url"]) + "," + str(repo["contributors"]) + "," + str(repo["watchers"]) + "," + str(repo["forks"]) + "," + str(repo["stars"]) + "," + str(repo["size"]) + "," + str(repo["open_issues"]) + "," + str(repo["closed_issues"]) + "," + str(repo["pull_requests"]) + "," + str(repo["releases"]) + "," + str(repo["commits"]) + "," + str(repo["closed_pull_requests"]) + "," + str(repo["events"]) + "," + str(repo["average_time_close_pull_requests_first_100"]) + "," + str(repo["average_time_close_pull_requests_last_100"]) + "," + str(repo["average_time_close_issues_first_100"]) + "," + str(repo["average_time_close_issues_last_100"]) + "," + str(repo["commits_frequency_first_100"]) + "," + str(repo["commits_frequency_last_100"]) + "," + str(repo["events_frequency_last_100"]) + "," + str(repo["creation_date"]) + "\n")
     return selected_repos
 
 def checkUniqueRepos(repos):
-    print("Checking for unique repos...")
+    log("Checking for unique repos...")
     unique_repos = []
     if not os.path.exists("repos"):
         os.makedirs("repos")
@@ -254,7 +258,7 @@ def checkUniqueRepos(repos):
             unique_repos.append(repo)
         time.sleep(0.001)
 
-    print("Found", len(unique_repos), "unique repos")
+    log("Found " + str(len(unique_repos)) + " unique repos")
     return unique_repos
 
 def get_cpp_repos(github_client, date_range):
@@ -269,5 +273,5 @@ if __name__ == "__main__":
     repos = get_cpp_repos(github_client, START_DATE + ".." + END_DATE)
     unique_repos = checkUniqueRepos(repos)
     selected_repos = preprocessRepos(unique_repos)
-    print("Selected repos:", len(selected_repos))
+    log("Selected repos: " + str(len(selected_repos)))
     advanced_repos = advancedRepos(github_client, selected_repos)
