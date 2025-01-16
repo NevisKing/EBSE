@@ -70,8 +70,8 @@ def preprocessRepos(unique_repos):
                 log("\tError getting contributors: " + str(e))
                 discared_repos.append(repo, "contributors")
                 continue
-
-        selected_repos.append({"repo": repo, "repo_name": repo.full_name, "repo_url": repo.html_url, "contributors": contributors, "watchers": repo.subscribers_count, "forks": repo.forks_count, "stars": repo.stargazers_count, "size": repo.size, "open_issues": repo.open_issues_count, "creation_date": repo.created_at})
+        
+        selected_repos.append({"repo": repo, "repo_name": repo.full_name, "repo_url": repo.html_url, "contributors": contributors, "watchers": repo.subscribers_count, "forks": repo.forks_count, "stars": repo.stargazers_count, "size": repo.size, "open_issues": repo.open_issues_count, "creation_date": repo.created_at.date()})
 
     # Add discarded repos to the discared_links.txt file
     with open("repos/discarded_links.txt", "a") as f:
