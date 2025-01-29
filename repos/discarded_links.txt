@@ -1,0 +1,8 @@
+https://github.com/lettier/3d-game-shaders-for-beginners contributors
+https://github.com/ggerganov/kbd-audio contributors
+https://github.com/Ewenwan/MVision contributors
+https://github.com/klzgrad/naiveproxy contributors
+https://github.com/TonyChen56/WeChatRobot contributors
+https://github.com/km1994/nlp_paper_study contributors
+https://github.com/balloonwj/flamingo contributors
+https://github.com/HKUST-Aerial-Robotics/VINS-Fusion contributors

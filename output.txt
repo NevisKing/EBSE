@@ -1,0 +1,652 @@
+Connected to GitHub as: mariamogos
+Remaining requests: 4974
+Checking for unique repos...
+Found 150 unique repos
+Preprocessing repo: microsoft/terminal
+Preprocessing repo: zhongyang219/TrafficMonitor
+Preprocessing repo: facebookresearch/faiss
+Preprocessing repo: CMU-Perceptual-Computing-Lab/openpose
+Preprocessing repo: SerenityOS/serenity
+Preprocessing repo: microsoft/calculator
+Preprocessing repo: google-ai-edge/mediapipe
+Preprocessing repo: duckdb/duckdb
+Preprocessing repo: ApolloAuto/apollo
+Preprocessing repo: flameshot-org/flameshot
+Preprocessing repo: ValveSoftware/Proton
+Preprocessing repo: microsoft/winget-cli
+Preprocessing repo: barry-ran/QtScrcpy
+Preprocessing repo: typesense/typesense
+Preprocessing repo: Tencent/ncnn
+Preprocessing repo: chromium/chromium
+	Repo has too many contributors
+Preprocessing repo: simdjson/simdjson
+Preprocessing repo: lettier/3d-game-shaders-for-beginners
+	Repo has less than 5 contributors
+Preprocessing repo: google/filament
+Preprocessing repo: Tencent/MMKV
+Preprocessing repo: qinguoyi/TinyWebServer
+Preprocessing repo: Qv2ray/Qv2ray
+Preprocessing repo: apache/brpc
+Preprocessing repo: microsoft/AirSim
+Preprocessing repo: TranslucentTB/TranslucentTB
+Preprocessing repo: rizinorg/cutter
+Preprocessing repo: Atmosphere-NX/Atmosphere
+Preprocessing repo: microsoft/onnxruntime
+Preprocessing repo: abseil/abseil-cpp
+Preprocessing repo: USTC-Resource/USTC-Course
+Preprocessing repo: apple/foundationdb
+Preprocessing repo: ZLMediaKit/ZLMediaKit
+Preprocessing repo: blender/blender
+Preprocessing repo: doitsujin/dxvk
+Preprocessing repo: apache/incubator-weex
+Preprocessing repo: OpenGenus/cosmos
+Preprocessing repo: carla-simulator/carla
+Preprocessing repo: TheCherno/Hazel
+Preprocessing repo: k4yt3x/video2x
+Preprocessing repo: Snapchat/KeyDB
+Preprocessing repo: moonlight-stream/moonlight-qt
+Preprocessing repo: EOSIO/eos
+Preprocessing repo: apple/turicreate
+Preprocessing repo: NVIDIA/TensorRT
+Preprocessing repo: vesoft-inc/nebula
+Preprocessing repo: taskflow/taskflow
+Preprocessing repo: google/sentencepiece
+Preprocessing repo: skypjack/entt
+Preprocessing repo: microsoft/STL
+Preprocessing repo: nasa/fprime
+Preprocessing repo: facebook/hermes
+Preprocessing repo: BlackINT3/OpenArk
+Preprocessing repo: TarsCloud/Tars
+Preprocessing repo: dail8859/NotepadNext
+Preprocessing repo: microsoft/napajs
+Preprocessing repo: manticoresoftware/manticoresearch
+Preprocessing repo: nodegui/nodegui
+Preprocessing repo: alibaba/MNN
+Preprocessing repo: bpftrace/bpftrace
+Preprocessing repo: esphome/esphome
+Preprocessing repo: diasurgical/devilution
+Preprocessing repo: WasmEdge/WasmEdge
+Preprocessing repo: finos/perspective
+Preprocessing repo: ggerganov/kbd-audio
+	Repo has less than 5 contributors
+Preprocessing repo: rapidsai/cudf
+Preprocessing repo: ValveSoftware/GameNetworkingSockets
+Preprocessing repo: olive-editor/olive
+Preprocessing repo: diasurgical/devilutionX
+Preprocessing repo: uNetworking/uWebSockets.js
+Preprocessing repo: Ewenwan/MVision
+	Repo has less than 5 contributors
+Preprocessing repo: avast/retdec
+Preprocessing repo: Tencent/Hippy
+Preprocessing repo: canonical/multipass
+Preprocessing repo: sebastianstarke/AI4Animation
+Preprocessing repo: stenzek/duckstation
+Preprocessing repo: ArthurSonzogni/FTXUI
+Preprocessing repo: openvinotoolkit/openvino
+Preprocessing repo: neutralinojs/neutralinojs
+Preprocessing repo: idea4good/GuiLite
+Preprocessing repo: tdlib/td
+Preprocessing repo: mamba-org/mamba
+Preprocessing repo: PaddlePaddle/Paddle-Lite
+Preprocessing repo: klzgrad/naiveproxy
+	Repo has less than 5 contributors
+Preprocessing repo: wwmm/easyeffects
+Preprocessing repo: relativty/Relativty
+Preprocessing repo: justcallmekoko/ESP32Marauder
+Preprocessing repo: TonyChen56/WeChatRobot
+	Repo has less than 5 contributors
+Preprocessing repo: OpenTTD/OpenTTD
+Preprocessing repo: microsoft/microsoft-ui-xaml
+Preprocessing repo: Oneflow-Inc/oneflow
+Preprocessing repo: interpretml/interpret
+Preprocessing repo: feiyangqingyun/QWidgetDemo
+Preprocessing repo: NVIDIA/cutlass
+Preprocessing repo: ethereum-mining/ethminer
+Preprocessing repo: tony9402/baekjoon
+Preprocessing repo: firebase/firebase-ios-sdk
+Preprocessing repo: love2d/love
+Preprocessing repo: szad670401/HyperLPR
+Preprocessing repo: gaoxiang12/slambook2
+Preprocessing repo: ffffffff0x/1earn
+Preprocessing repo: flashlight/flashlight
+Preprocessing repo: 0xZ0F/Z0FCourse_ReverseEngineering
+Preprocessing repo: NVIDIA/DALI
+Preprocessing repo: werman/noise-suppression-for-voice
+Preprocessing repo: mhammond/pywin32
+Preprocessing repo: HKUST-Aerial-Robotics/VINS-Mono
+Preprocessing repo: ssloy/tinyraytracer
+Preprocessing repo: Redot-Engine/redot-engine
+Preprocessing repo: google-ar/arcore-android-sdk
+Preprocessing repo: justadudewhohacks/opencv4nodejs
+Preprocessing repo: XiaoMi/mace
+Preprocessing repo: zhongyang219/MusicPlayer2
+Preprocessing repo: ConfettiFX/The-Forge
+Preprocessing repo: microsoft/SPTAG
+Preprocessing repo: NatronGitHub/Natron
+Preprocessing repo: kamyu104/LeetCode-Solutions
+Preprocessing repo: tranek/GASDocumentation
+Preprocessing repo: GothenburgBitFactory/taskwarrior
+Preprocessing repo: lief-project/LIEF
+Preprocessing repo: plaidml/plaidml
+Preprocessing repo: KhronosGroup/Vulkan-Samples
+Preprocessing repo: dfranx/SHADERed
+Preprocessing repo: OAID/Tengine
+Preprocessing repo: rapidsai/cuml
+Preprocessing repo: google/highway
+Preprocessing repo: google-deepmind/open_spiel
+Preprocessing repo: google/orbit
+Preprocessing repo: luau-lang/luau
+Preprocessing repo: Vita3K/Vita3K
+Preprocessing repo: Vhonowslend/StreamFX-Public
+Preprocessing repo: km1994/nlp_paper_study
+	Repo has less than 5 contributors
+Preprocessing repo: baidu/lac
+Preprocessing repo: thedmd/imgui-node-editor
+Preprocessing repo: balloonwj/flamingo
+	Repo has less than 5 contributors
+Preprocessing repo: ExpressLRS/ExpressLRS
+Preprocessing repo: LUX-Core/lux
+Preprocessing repo: tindy2013/stairspeedtest-reborn
+Preprocessing repo: google/oboe
+Preprocessing repo: lightvector/KataGo
+Preprocessing repo: apache/kvrocks
+Preprocessing repo: HKUST-Aerial-Robotics/VINS-Fusion
+	Repo has less than 5 contributors
+Preprocessing repo: dpilger26/NumCpp
+Preprocessing repo: citizenfx/fivem
+Preprocessing repo: Qihoo360/evpp
+Preprocessing repo: NerdLang/nerd
+Preprocessing repo: zufuliu/notepad4
+Preprocessing repo: OpenNMT/CTranslate2
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 142
+Remaining requests: 4850
+Getting advanced repo data for: microsoft/terminal
+Remaining requests: 4589
+Getting advanced repo data for: zhongyang219/TrafficMonitor
+Remaining requests: 4373
+Getting advanced repo data for: facebookresearch/faiss
+Remaining requests: 4143
+Getting advanced repo data for: CMU-Perceptual-Computing-Lab/openpose
+Remaining requests: 3925
+Getting advanced repo data for: SerenityOS/serenity
+Remaining requests: 3479
+Getting advanced repo data for: microsoft/calculator
+Remaining requests: 3249
+Getting advanced repo data for: google-ai-edge/mediapipe
+Remaining requests: 3029
+Getting advanced repo data for: duckdb/duckdb
+Remaining requests: 2736
+Getting advanced repo data for: ApolloAuto/apollo
+Remaining requests: 2518
+Getting advanced repo data for: flameshot-org/flameshot
+Remaining requests: 2293
+Getting advanced repo data for: ValveSoftware/Proton
+Remaining requests: 2075
+Getting advanced repo data for: microsoft/winget-cli
+Remaining requests: 1842
+Getting advanced repo data for: barry-ran/QtScrcpy
+Remaining requests: 1625
+Getting advanced repo data for: typesense/typesense
+Remaining requests: 1403
+Getting advanced repo data for: Tencent/ncnn
+Remaining requests: 1165
+Getting advanced repo data for: chromium/chromium
+	Commit before 2010: chromium/chromium Commit date: 2001-08-24 14:11:42+00:00
+Remaining requests: 1151
+Getting advanced repo data for: simdjson/simdjson
+Remaining requests: 921
+Getting advanced repo data for: google/filament
+Remaining requests: 645
+Getting advanced repo data for: Tencent/MMKV
+Remaining requests: 4570
+Getting advanced repo data for: qinguoyi/TinyWebServer
+Remaining requests: 4402
+Getting advanced repo data for: Qv2ray/Qv2ray
+Remaining requests: 3260
+Getting advanced repo data for: apache/brpc
+Remaining requests: 3030
+Getting advanced repo data for: microsoft/AirSim
+Remaining requests: 2806
+Getting advanced repo data for: TranslucentTB/TranslucentTB
+Remaining requests: 2590
+Getting advanced repo data for: rizinorg/cutter
+Remaining requests: 2356
+Getting advanced repo data for: Atmosphere-NX/Atmosphere
+Remaining requests: 467
+Getting advanced repo data for: microsoft/onnxruntime
+Remaining requests: 238
+Rate limit exceeded. Sleeping for 1031 seconds
+Getting advanced repo data for: abseil/abseil-cpp
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/abseil/abseil-cpp/issues/56 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11ba69d10>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Connected to GitHub as: mariamogos
+Remaining requests: 4995
+Checking for unique repos...
+Found 93 unique repos
+Preprocessing repo: facebook/hermes
+Preprocessing repo: BlackINT3/OpenArk
+Preprocessing repo: TarsCloud/Tars
+Preprocessing repo: dail8859/NotepadNext
+Preprocessing repo: microsoft/napajs
+Preprocessing repo: manticoresoftware/manticoresearch
+Preprocessing repo: nodegui/nodegui
+Preprocessing repo: alibaba/MNN
+Preprocessing repo: bpftrace/bpftrace
+Preprocessing repo: esphome/esphome
+Preprocessing repo: diasurgical/devilution
+Preprocessing repo: WasmEdge/WasmEdge
+Preprocessing repo: finos/perspective
+Preprocessing repo: rapidsai/cudf
+Preprocessing repo: ValveSoftware/GameNetworkingSockets
+Preprocessing repo: olive-editor/olive
+Preprocessing repo: diasurgical/devilutionX
+Preprocessing repo: uNetworking/uWebSockets.js
+Preprocessing repo: avast/retdec
+Preprocessing repo: Tencent/Hippy
+Preprocessing repo: canonical/multipass
+Preprocessing repo: sebastianstarke/AI4Animation
+Preprocessing repo: stenzek/duckstation
+Preprocessing repo: ArthurSonzogni/FTXUI
+Preprocessing repo: openvinotoolkit/openvino
+Preprocessing repo: neutralinojs/neutralinojs
+Preprocessing repo: idea4good/GuiLite
+Preprocessing repo: tdlib/td
+Preprocessing repo: mamba-org/mamba
+Preprocessing repo: PaddlePaddle/Paddle-Lite
+Preprocessing repo: wwmm/easyeffects
+Preprocessing repo: relativty/Relativty
+Preprocessing repo: justcallmekoko/ESP32Marauder
+Preprocessing repo: OpenTTD/OpenTTD
+Preprocessing repo: microsoft/microsoft-ui-xaml
+Preprocessing repo: Oneflow-Inc/oneflow
+Preprocessing repo: interpretml/interpret
+Preprocessing repo: feiyangqingyun/QWidgetDemo
+Preprocessing repo: NVIDIA/cutlass
+Preprocessing repo: ethereum-mining/ethminer
+Preprocessing repo: tony9402/baekjoon
+Preprocessing repo: firebase/firebase-ios-sdk
+Preprocessing repo: love2d/love
+Preprocessing repo: szad670401/HyperLPR
+Preprocessing repo: gaoxiang12/slambook2
+Preprocessing repo: ffffffff0x/1earn
+Preprocessing repo: flashlight/flashlight
+Preprocessing repo: 0xZ0F/Z0FCourse_ReverseEngineering
+Preprocessing repo: NVIDIA/DALI
+Preprocessing repo: werman/noise-suppression-for-voice
+Preprocessing repo: mhammond/pywin32
+Preprocessing repo: HKUST-Aerial-Robotics/VINS-Mono
+Preprocessing repo: ssloy/tinyraytracer
+Preprocessing repo: Redot-Engine/redot-engine
+Preprocessing repo: google-ar/arcore-android-sdk
+Preprocessing repo: justadudewhohacks/opencv4nodejs
+Preprocessing repo: XiaoMi/mace
+Preprocessing repo: zhongyang219/MusicPlayer2
+Preprocessing repo: ConfettiFX/The-Forge
+Preprocessing repo: microsoft/SPTAG
+Preprocessing repo: NatronGitHub/Natron
+Preprocessing repo: kamyu104/LeetCode-Solutions
+Preprocessing repo: tranek/GASDocumentation
+Preprocessing repo: GothenburgBitFactory/taskwarrior
+Preprocessing repo: lief-project/LIEF
+Preprocessing repo: plaidml/plaidml
+Preprocessing repo: KhronosGroup/Vulkan-Samples
+Preprocessing repo: dfranx/SHADERed
+Preprocessing repo: OAID/Tengine
+Preprocessing repo: rapidsai/cuml
+Preprocessing repo: google/highway
+Preprocessing repo: google-deepmind/open_spiel
+Preprocessing repo: google/orbit
+Preprocessing repo: luau-lang/luau
+Preprocessing repo: Vita3K/Vita3K
+Preprocessing repo: Vhonowslend/StreamFX-Public
+Preprocessing repo: baidu/lac
+Preprocessing repo: thedmd/imgui-node-editor
+Preprocessing repo: ExpressLRS/ExpressLRS
+Preprocessing repo: LUX-Core/lux
+Preprocessing repo: tindy2013/stairspeedtest-reborn
+Preprocessing repo: google/oboe
+Preprocessing repo: lightvector/KataGo
+Preprocessing repo: apache/kvrocks
+Preprocessing repo: citizenfx/fivem
+Preprocessing repo: dpilger26/NumCpp
+Preprocessing repo: Qihoo360/evpp
+Preprocessing repo: NerdLang/nerd
+Preprocessing repo: zufuliu/notepad4
+Preprocessing repo: OpenNMT/CTranslate2
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 93
+Remaining requests: 4809
+Getting advanced repo data for: facebook/hermes
+Remaining requests: 4585
+Getting advanced repo data for: BlackINT3/OpenArk
+Remaining requests: 4428
+Getting advanced repo data for: TarsCloud/Tars
+Remaining requests: 3679
+Getting advanced repo data for: dail8859/NotepadNext
+Remaining requests: 3244
+Getting advanced repo data for: microsoft/napajs
+Remaining requests: 3165
+Getting advanced repo data for: manticoresoftware/manticoresearch
+	Commit before 2010: manticoresoftware/manticoresearch Commit date: 2005-03-13 13:53:20+00:00
+Remaining requests: 2940
+Getting advanced repo data for: nodegui/nodegui
+Remaining requests: 2604
+Getting advanced repo data for: alibaba/MNN
+Remaining requests: 4928
+Getting advanced repo data for: bpftrace/bpftrace
+Remaining requests: 4687
+Getting advanced repo data for: esphome/esphome
+Remaining requests: 4331
+Getting advanced repo data for: diasurgical/devilution
+Remaining requests: 3995
+Getting advanced repo data for: WasmEdge/WasmEdge
+Remaining requests: 3751
+Getting advanced repo data for: finos/perspective
+Remaining requests: 3513
+Getting advanced repo data for: rapidsai/cudf
+Remaining requests: 3289
+Getting advanced repo data for: ValveSoftware/GameNetworkingSockets
+Remaining requests: 3080
+Getting advanced repo data for: olive-editor/olive
+Remaining requests: 2861
+Getting advanced repo data for: diasurgical/devilutionX
+Remaining requests: 2640
+Getting advanced repo data for: uNetworking/uWebSockets.js
+Remaining requests: 2264
+Getting advanced repo data for: avast/retdec
+Remaining requests: 2043
+Getting advanced repo data for: Tencent/Hippy
+Remaining requests: 1651
+Getting advanced repo data for: canonical/multipass
+Remaining requests: 1417
+Getting advanced repo data for: sebastianstarke/AI4Animation
+Remaining requests: 1305
+Getting advanced repo data for: stenzek/duckstation
+Remaining requests: 1292
+Getting advanced repo data for: ArthurSonzogni/FTXUI
+Remaining requests: 981
+Getting advanced repo data for: openvinotoolkit/openvino
+Remaining requests: 737
+Getting advanced repo data for: neutralinojs/neutralinojs
+Remaining requests: 521
+Getting advanced repo data for: idea4good/GuiLite
+Remaining requests: 480
+Getting advanced repo data for: tdlib/td
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/tdlib/td/issues/124 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107f47d90>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Connected to GitHub as: mariamogos
+Remaining requests: 4994
+Checking for unique repos...
+Found 66 unique repos
+Preprocessing repo: tdlib/td
+Preprocessing repo: mamba-org/mamba
+Preprocessing repo: PaddlePaddle/Paddle-Lite
+Preprocessing repo: wwmm/easyeffects
+Preprocessing repo: relativty/Relativty
+Preprocessing repo: justcallmekoko/ESP32Marauder
+Preprocessing repo: OpenTTD/OpenTTD
+Preprocessing repo: microsoft/microsoft-ui-xaml
+Preprocessing repo: Oneflow-Inc/oneflow
+Preprocessing repo: interpretml/interpret
+Preprocessing repo: feiyangqingyun/QWidgetDemo
+Preprocessing repo: NVIDIA/cutlass
+Preprocessing repo: ethereum-mining/ethminer
+Preprocessing repo: tony9402/baekjoon
+Preprocessing repo: firebase/firebase-ios-sdk
+Preprocessing repo: love2d/love
+Preprocessing repo: szad670401/HyperLPR
+Preprocessing repo: gaoxiang12/slambook2
+Preprocessing repo: ffffffff0x/1earn
+Preprocessing repo: flashlight/flashlight
+Preprocessing repo: 0xZ0F/Z0FCourse_ReverseEngineering
+Preprocessing repo: NVIDIA/DALI
+Preprocessing repo: werman/noise-suppression-for-voice
+Preprocessing repo: mhammond/pywin32
+Preprocessing repo: HKUST-Aerial-Robotics/VINS-Mono
+Preprocessing repo: Redot-Engine/redot-engine
+Preprocessing repo: ssloy/tinyraytracer
+Preprocessing repo: google-ar/arcore-android-sdk
+Preprocessing repo: justadudewhohacks/opencv4nodejs
+Preprocessing repo: XiaoMi/mace
+Preprocessing repo: zhongyang219/MusicPlayer2
+Preprocessing repo: ConfettiFX/The-Forge
+Preprocessing repo: microsoft/SPTAG
+Preprocessing repo: NatronGitHub/Natron
+Preprocessing repo: kamyu104/LeetCode-Solutions
+Preprocessing repo: tranek/GASDocumentation
+Preprocessing repo: GothenburgBitFactory/taskwarrior
+Preprocessing repo: lief-project/LIEF
+Preprocessing repo: plaidml/plaidml
+Preprocessing repo: KhronosGroup/Vulkan-Samples
+Preprocessing repo: dfranx/SHADERed
+Preprocessing repo: OAID/Tengine
+Preprocessing repo: rapidsai/cuml
+Preprocessing repo: google/highway
+Preprocessing repo: google-deepmind/open_spiel
+Preprocessing repo: google/orbit
+Preprocessing repo: luau-lang/luau
+Preprocessing repo: Vita3K/Vita3K
+Preprocessing repo: Vhonowslend/StreamFX-Public
+Preprocessing repo: baidu/lac
+Preprocessing repo: thedmd/imgui-node-editor
+Preprocessing repo: ExpressLRS/ExpressLRS
+Preprocessing repo: LUX-Core/lux
+Preprocessing repo: tindy2013/stairspeedtest-reborn
+Preprocessing repo: google/oboe
+Preprocessing repo: lightvector/KataGo
+Preprocessing repo: apache/kvrocks
+Preprocessing repo: dpilger26/NumCpp
+Preprocessing repo: citizenfx/fivem
+Preprocessing repo: Qihoo360/evpp
+Preprocessing repo: NerdLang/nerd
+Preprocessing repo: zufuliu/notepad4
+Preprocessing repo: OpenNMT/CTranslate2
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 66
+Remaining requests: 4862
+Getting advanced repo data for: tdlib/td
+Remaining requests: 1970
+Getting advanced repo data for: mamba-org/mamba
+Remaining requests: 1733
+Getting advanced repo data for: PaddlePaddle/Paddle-Lite
+Remaining requests: 1436
+Getting advanced repo data for: wwmm/easyeffects
+Remaining requests: 1217
+Getting advanced repo data for: relativty/Relativty
+Remaining requests: 1184
+Getting advanced repo data for: justcallmekoko/ESP32Marauder
+Remaining requests: 966
+Getting advanced repo data for: OpenTTD/OpenTTD
+	Issue before 2010: OpenTTD/OpenTTD Issue date: 2005-10-23 01:46:37+00:00
+	Commit before 2010: OpenTTD/OpenTTD Commit date: 2004-08-20 13:58:25+00:00
+Remaining requests: 744
+Getting advanced repo data for: microsoft/microsoft-ui-xaml
+Remaining requests: 503
+Getting advanced repo data for: Oneflow-Inc/oneflow
+Remaining requests: 242
+Rate limit exceeded. Sleeping for 368 seconds
+Getting advanced repo data for: interpretml/interpret
+Remaining requests: 4785
+Getting advanced repo data for: feiyangqingyun/QWidgetDemo
+Remaining requests: 4740
+Getting advanced repo data for: NVIDIA/cutlass
+Remaining requests: 4519
+Getting advanced repo data for: ethereum-mining/ethminer
+Remaining requests: 4296
+Getting advanced repo data for: tony9402/baekjoon
+Remaining requests: 4247
+Getting advanced repo data for: firebase/firebase-ios-sdk
+Remaining requests: 3939
+Getting advanced repo data for: love2d/love
+	Commit before 2010: love2d/love Commit date: 2009-09-06 16:29:17+00:00
+Remaining requests: 2008
+Getting advanced repo data for: szad670401/HyperLPR
+Remaining requests: 1740
+Getting advanced repo data for: gaoxiang12/slambook2
+Remaining requests: 1524
+Getting advanced repo data for: ffffffff0x/1earn
+Remaining requests: 1502
+Getting advanced repo data for: flashlight/flashlight
+Remaining requests: 1175
+Getting advanced repo data for: 0xZ0F/Z0FCourse_ReverseEngineering
+Remaining requests: 1149
+Getting advanced repo data for: NVIDIA/DALI
+Remaining requests: 884
+Getting advanced repo data for: werman/noise-suppression-for-voice
+Remaining requests: 776
+Getting advanced repo data for: mhammond/pywin32
+	Issue before 2010: mhammond/pywin32 Issue date: 2003-04-07 12:43:42+00:00
+	Commit before 2010: mhammond/pywin32 Commit date: 1999-09-12 04:08:49+00:00
+Remaining requests: 553
+Getting advanced repo data for: HKUST-Aerial-Robotics/VINS-Mono
+Remaining requests: 339
+Getting advanced repo data for: Redot-Engine/redot-engine
+Remaining requests: 247
+Rate limit exceeded. Sleeping for 978 seconds
+Getting advanced repo data for: ssloy/tinyraytracer
+Remaining requests: 4974
+Getting advanced repo data for: google-ar/arcore-android-sdk
+Remaining requests: 4757
+Getting advanced repo data for: justadudewhohacks/opencv4nodejs
+Remaining requests: 4539
+Getting advanced repo data for: XiaoMi/mace
+Remaining requests: 3896
+Getting advanced repo data for: zhongyang219/MusicPlayer2
+Remaining requests: 3680
+Getting advanced repo data for: ConfettiFX/The-Forge
+Remaining requests: 3494
+Getting advanced repo data for: microsoft/SPTAG
+Remaining requests: 3376
+Getting advanced repo data for: NatronGitHub/Natron
+Remaining requests: 3158
+Getting advanced repo data for: kamyu104/LeetCode-Solutions
+Remaining requests: 3096
+Getting advanced repo data for: tranek/GASDocumentation
+Remaining requests: 3011
+Getting advanced repo data for: GothenburgBitFactory/taskwarrior
+	Commit before 2010: GothenburgBitFactory/taskwarrior Commit date: 2008-05-11 02:10:01+00:00
+Remaining requests: 2787
+Getting advanced repo data for: lief-project/LIEF
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/lief-project/LIEF/issues/1019 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x112e90cd0>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Connected to GitHub as: mariamogos
+Remaining requests: 2079
+Checking for unique repos...
+Found 29 unique repos
+Preprocessing repo: lief-project/LIEF
+Preprocessing repo: plaidml/plaidml
+Preprocessing repo: KhronosGroup/Vulkan-Samples
+Preprocessing repo: dfranx/SHADERed
+Preprocessing repo: OAID/Tengine
+Preprocessing repo: rapidsai/cuml
+Preprocessing repo: google/highway
+Preprocessing repo: google-deepmind/open_spiel
+Preprocessing repo: google/orbit
+Preprocessing repo: luau-lang/luau
+Preprocessing repo: Vita3K/Vita3K
+Preprocessing repo: Vhonowslend/StreamFX-Public
+Preprocessing repo: baidu/lac
+Preprocessing repo: thedmd/imgui-node-editor
+Preprocessing repo: ExpressLRS/ExpressLRS
+Preprocessing repo: LUX-Core/lux
+Preprocessing repo: tindy2013/stairspeedtest-reborn
+Preprocessing repo: google/oboe
+Preprocessing repo: lightvector/KataGo
+Preprocessing repo: apache/kvrocks
+Preprocessing repo: dpilger26/NumCpp
+Preprocessing repo: citizenfx/fivem
+Preprocessing repo: Qihoo360/evpp
+Preprocessing repo: NerdLang/nerd
+Preprocessing repo: zufuliu/notepad4
+Preprocessing repo: OpenNMT/CTranslate2
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 29
+Remaining requests: 2021
+Getting advanced repo data for: lief-project/LIEF
+Remaining requests: 1232
+Getting advanced repo data for: plaidml/plaidml
+Remaining requests: 4947
+Getting advanced repo data for: KhronosGroup/Vulkan-Samples
+Remaining requests: 4482
+Getting advanced repo data for: dfranx/SHADERed
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/dfranx/SHADERed/commits?page=9&per_page=100 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11af7c7d0>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Connected to GitHub as: mariamogos
+Remaining requests: 4995
+Checking for unique repos...
+Found 17 unique repos
+Preprocessing repo: baidu/lac
+Preprocessing repo: thedmd/imgui-node-editor
+Preprocessing repo: ExpressLRS/ExpressLRS
+Preprocessing repo: LUX-Core/lux
+Preprocessing repo: tindy2013/stairspeedtest-reborn
+Preprocessing repo: google/oboe
+Preprocessing repo: lightvector/KataGo
+Preprocessing repo: apache/kvrocks
+Preprocessing repo: citizenfx/fivem
+Preprocessing repo: dpilger26/NumCpp
+Preprocessing repo: Qihoo360/evpp
+Preprocessing repo: NerdLang/nerd
+Preprocessing repo: zufuliu/notepad4
+Preprocessing repo: OpenNMT/CTranslate2
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 17
+Remaining requests: 4961
+Getting advanced repo data for: baidu/lac
+Remaining requests: 4765
+Getting advanced repo data for: thedmd/imgui-node-editor
+Remaining requests: 4572
+Getting advanced repo data for: ExpressLRS/ExpressLRS
+Remaining requests: 3745
+Getting advanced repo data for: LUX-Core/lux
+Remaining requests: 3713
+Getting advanced repo data for: tindy2013/stairspeedtest-reborn
+Remaining requests: 3622
+Getting advanced repo data for: google/oboe
+Remaining requests: 3397
+Getting advanced repo data for: lightvector/KataGo
+Remaining requests: 3180
+Getting advanced repo data for: apache/kvrocks
+Remaining requests: 2942
+Getting advanced repo data for: citizenfx/fivem
+Remaining requests: 2703
+Getting advanced repo data for: dpilger26/NumCpp
+Remaining requests: 2507
+Getting advanced repo data for: Qihoo360/evpp
+Remaining requests: 2291
+Getting advanced repo data for: NerdLang/nerd
+Remaining requests: 2161
+Getting advanced repo data for: zufuliu/notepad4
+Remaining requests: 1945
+Getting advanced repo data for: OpenNMT/CTranslate2
+Remaining requests: 1715
+Getting advanced repo data for: CrowCpp/Crow
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/CrowCpp/Crow/issues/264 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x123d1ec10>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Remaining requests: 1572
+Getting advanced repo data for: chromiumembedded/cef
+	Issue before 2010: chromiumembedded/cef Issue date: 2009-01-10 16:33:14+00:00
+	Commit before 2010: chromiumembedded/cef Commit date: 2009-06-01 14:12:34+00:00
+Error getting advanced repo data: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/chromiumembedded/cef/issues/80 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x117a95590>: Failed to resolve 'api.github.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Connected to GitHub as: mariamogos
+Remaining requests: 4994
+Checking for unique repos...
+Found 3 unique repos
+Preprocessing repo: CrowCpp/Crow
+Preprocessing repo: chromiumembedded/cef
+Preprocessing repo: shader-slang/slang
+Selected repos: 3
+Remaining requests: 4988
+Getting advanced repo data for: CrowCpp/Crow
+Remaining requests: 4489
+Getting advanced repo data for: chromiumembedded/cef
+	Issue before 2010: chromiumembedded/cef Issue date: 2009-01-10 16:33:14+00:00
+	Commit before 2010: chromiumembedded/cef Commit date: 2009-06-01 14:12:34+00:00
+Remaining requests: 4274
+Getting advanced repo data for: shader-slang/slang
