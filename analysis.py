@@ -2,6 +2,7 @@ import pandas as pd  # For data handling
 import seaborn as sns  # For visualizations
 import matplotlib.pyplot as plt  # For plotting
 import scipy.stats as stats  # For correlation
+import numpy as np  # For numerical operations
 
 # Load the dataset
 file_path = "dataset.xlsx"
@@ -23,12 +24,45 @@ update_metrics = [
 
 popularity_metrics = ["watchers", "forks", "stars"]
 
+all_metrics = activity_metrics + community_metrics + update_metrics + popularity_metrics
+
+#remove rows with a zero
+filtered = data[(data[all_metrics] != 0).all(axis=1)]
+
+#check for outliers
+def detect_outliers(data, columns):
+    plt.figure(figsize=(12, 8))
+    sns.boxplot(data=data[columns])
+    plt.title("Boxplot of numeric variables")
+    plt.show()
+
+    #Calculate z-scores(<-3 or >3 are outliers)
+    z_scores = np.abs(stats.zscore(data[columns].dropna()))
+    outlier_counts = np.sum(z_scores > 3).sum()
+    print(f"Number of outliers:\n{outlier_counts}")
+
+#check normality
+def check_normality(data, column):
+    stat, p_value = stats.shapiro(data[column].dropna())
+    return p_value >= 0.5 # If p-value is greater than 0.05, data is normally distributed
+
 #correlation and plotting
 def analyze_correlation(independent_vars, independent_label):
     for independent in independent_vars:
         for popularity in popularity_metrics:
-            corr, p_value = stats.pearsonr(data[independent], data[popularity])
-            print(f"Correlation between {independent} ({independent_label}) and {popularity}: {corr:.3f} (p={p_value:.3f})")
+            #check normality
+            independent_normal = check_normality(filtered, independent)
+            popularity_normal = check_normality(filtered, popularity)
+            
+            #Pearson if both are normal, otherwise Spearman
+            if independent_normal and popularity_normal:
+                corr, p_value = stats.pearsonr(filtered[independent], filtered[popularity])
+                method = "Pearson"
+            else:
+                corr, p_value = stats.spearmanr(filtered[independent], filtered[popularity])
+                method = "Spearman"
+            
+            print(f"{method} correlation between {independent} ({independent_label}) and {popularity}: {corr:.3f} (p={p_value:.3f})")
 
             # Create scatterplot with regression line
             sns.lmplot(x=independent, y=popularity, data=data)
@@ -36,6 +70,9 @@ def analyze_correlation(independent_vars, independent_label):
             plt.xlabel(independent)
             plt.ylabel(popularity)
             plt.show()
+
+#outlier detection
+detect_outliers(filtered, activity_metrics + community_metrics + update_metrics + popularity_metrics)
 
 #which rq to run
 print("Select Research Question (RQ) to analyze:")
@@ -72,11 +109,20 @@ elif choice == "4":
     for category, metrics in all_metrics.items():
         for metric in metrics:
             for popularity in popularity_metrics:
-                corr, p_value = stats.pearsonr(data[metric], data[popularity])
-                correlation_results.append((category, metric, popularity, corr, p_value))
-
+                independent_normal = check_normality(filtered, metric)
+                popularity_normal = check_normality(filtered, popularity)
+                
+                if independent_normal and popularity_normal:
+                    corr, p_value = stats.pearsonr(filtered[metric], filtered[popularity])
+                    method = "Pearson"
+                else:
+                    corr, p_value = stats.spearmanr(filtered[metric], filtered[popularity])
+                    method = "Spearman"
+                
+                correlation_results.append((category, metric, popularity, method, corr, p_value))
+    
     # Convert results into a DataFrame for easy viewing
-    correlation_df = pd.DataFrame(correlation_results, columns=["Category", "Metadata", "Popularity Metric", "Correlation", "P-value"])
+    correlation_df = pd.DataFrame(correlation_results, columns=["Category", "Metadata", "Popularity Metric", "Method","Correlation", "P-value"])
     print(correlation_df)
 
 else:
