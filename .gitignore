@@ -1,1 +1,4 @@
 /env
+/analysis/*
+!/analysis/dataset.csv
+!/analysis/analysis.py

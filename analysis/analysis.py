@@ -26,6 +26,7 @@ def plot_data(x, y, title, x_label, y_label):
     
     # Save the plot
     plt.savefig(f'plots/{x_label}_vs_{y_label}.png')
+    plt.close()
 
 def remove_outliers(data):
     z_scores = zscore(data)
@@ -82,7 +83,3 @@ if __name__ == '__main__':
     
     df = pd.DataFrame(csv, columns=['Metric A', 'Normality A', 'P-value A', 'Metric B', 'Normality B', 'P-value B', 'Correlation', 'Correlation Value', 'P-value Correlation'])
     df.to_csv('correlation.csv', index=False)
-
-        
-    
-    
