@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from scipy.stats import zscore, shapiro, pearsonr, spearmanr
+from scipy.stats import zscore, shapiro, pearsonr, spearmanr, f_oneway
 
 def clean_data():
     data = pd.read_csv('dataset.csv')
@@ -51,18 +51,51 @@ def calculate_correlation(column_a, column_b, csv):
         print(f"Calculating Pearson correlation between {column_a.name} and {column_b.name}")
         corr, p_value = pearsonr(column_a, column_b)
         print(f"\tPearson Correlation: {corr:.3f}")
-        print(f"\tP-value: {p_value:.3e}")
+        if p_value < 0.05:
+            print(f"\tP-value: {p_value:.3e} (significant correlation)")
+        else:
+            print(f"\tP-value: {p_value:.3e} (no significant correlation)")
     else:
         correlation = 'spearman'
         # If not, use Spearman correlation
         print(f"Calculating Spearman correlation between {column_a.name} and {column_b.name}")
         corr, p_value = spearmanr(column_a, column_b)
         print(f"\tSpearman Correlation: {corr:.3f}")
-        print(f"\tP-value: {p_value:.3e}")
+        if p_value < 0.05:
+            print(f"\tP-value: {p_value:.3e} (significant correlation)")
+        else:
+            print(f"\tP-value: {p_value:.3e} (no significant correlation)")
     print()
     csv.append([column_a.name, normality_column_a, f"{p_value_column_a:.3e}", column_b.name, normality_column_b, f"{p_value_column_b:.3e}", correlation, f"{corr:.3f}", f"{p_value:.3e}"])
-    
-    return corr, p_value
+
+def calculate_anova(watchers_values, stars_values, forks_values):
+    return f_oneway(watchers_values, stars_values, forks_values)
+
+def calculate_correlation_differences(df):
+    matrix = df.pivot(index='Metric B', columns='Metric A', values='Correlation Value')
+
+    matrix = matrix.apply(pd.to_numeric, errors='coerce')
+    plt.matshow(matrix, cmap='coolwarm')
+    plt.xticks(range(len(matrix.columns)), matrix.columns, rotation=90)
+    plt.yticks(range(len(matrix.index)), matrix.index)
+    plt.colorbar()
+    plt.show()
+
+    # get matrix values for stars
+    stars = matrix.loc['stars'].values
+    watchers = matrix.loc['watchers'].values
+    forks = matrix.loc['forks'].values
+
+    # Print mean values
+    print(f"Mean correlation between stars and other metrics: {stars.mean():.3f}")
+    print(f"Mean correlation between watchers and other metrics: {watchers.mean():.3f}")
+    print(f"Mean correlation between forks and other metrics: {forks.mean():.3f}")
+
+    f_statistic, p_value = calculate_anova(watchers, stars, forks)
+    print(f"ANOVA F-statistic: {f_statistic:.3f}")
+    print(f"ANOVA P-value: {p_value:.3f}")
+
+
 
 
 if __name__ == '__main__':
@@ -83,3 +116,4 @@ if __name__ == '__main__':
     
     df = pd.DataFrame(csv, columns=['Metric A', 'Normality A', 'P-value A', 'Metric B', 'Normality B', 'P-value B', 'Correlation', 'Correlation Value', 'P-value Correlation'])
     df.to_csv('correlation.csv', index=False)
+    calculate_correlation_differences(df)

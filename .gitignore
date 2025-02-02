@@ -1,7 +1,3 @@
 /env
-/analysis/*
-!/analysis/dataset.csv
-!/analysis/analysis.py
-!/analysis/requirements.txt
 /mining/repos/discarded_links.txt
 /mining/output.txt
